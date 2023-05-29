@@ -15,7 +15,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'commonmarker'
+  gem 'commonmarker', '>= 0.23.9'
 end
 
 group :test do
