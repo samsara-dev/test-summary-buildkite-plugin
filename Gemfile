@@ -6,6 +6,7 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 gem 'bundler'
 gem 'haml', '~> 5.2.2'
+gem 'rexml'
 
 group :development, :test do
   gem 'rake'
