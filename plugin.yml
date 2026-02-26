@@ -68,6 +68,8 @@ configuration:
       type: boolean
     run_without_docker:
       type: boolean
+    docker_image:
+      type: string
   required:
     - inputs
   additionalProperties: false
