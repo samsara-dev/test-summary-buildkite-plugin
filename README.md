@@ -152,6 +152,9 @@ Other formatter options are:
 * `fail_on_error:` Whether the command should return non-zero exit status on failure. Defaults to `false` so failing
   to annotate a build does not cause the entire pipeline to fail.
 * `run_without_docker:` Set the enviroment to run without docker. Defaults to `false`.
+* `docker_image:` Override the Docker image used to run the plugin. When set, the plugin pulls this
+  image directly instead of resolving a tag from the checked-out plugin and pulling from Docker Hub.
+  Useful for pulling from a private registry (e.g. ECR) instead of Docker Hub. No default.
   
 ## Truncation
 
