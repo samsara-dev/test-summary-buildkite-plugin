@@ -11,6 +11,7 @@ GEM
       temple (>= 0.8.0)
       tilt
     rake (13.2.0)
+    rexml (3.4.4)
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)
@@ -46,9 +47,10 @@ DEPENDENCIES
   commonmarker
   haml (~> 5.2.2)
   rake
+  rexml
   rspec
   rspec_junit_formatter
   simplecov
 
 BUNDLED WITH
-   2.5.7
+   2.4.19
