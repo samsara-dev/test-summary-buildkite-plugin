@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 ## [v1.13.1](https://github.com/samsara-dev/test-summary-buildkite-plugin/compare/v1.13.0...v1.13.1) - 2026-07-28
-- Fix pathological JUnit processing time for wide suites with many passing testcases [#8](https://github.com/samsara-dev/test-summary-buildkite-plugin/pull/8)
+- Optimize JUnit processing time for large test results with many passing testcases [#8](https://github.com/samsara-dev/test-summary-buildkite-plugin/pull/8)
 
 ## [v1.11.0](https://github.com/bugcrowd/test-summary-buildkite-plugin/compare/v1.10.0...v1.11.0) - 2020-01-28
 - Forward `HTTP_PROXY` ENV var to respect proxies [#58](https://github.com/bugcrowd/test-summary-buildkite-plugin/pull/58)
