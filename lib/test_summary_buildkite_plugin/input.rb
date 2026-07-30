@@ -107,7 +107,7 @@ module TestSummaryBuildkitePlugin
     class JUnit < Base
       def file_contents_to_failures(str)
         xml = REXML::Document.new(str)
-        xml.elements.enum_for(:each, '//testcase').each_with_object([]) do |testcase, failures|
+        xml.elements.enum_for(:each, '//*[self::testcase][failure or error]').each_with_object([]) do |testcase, failures|
           testcase.elements.each('failure | error') do |failure|
             failures << Failure::Structured.new(
               summary: summary(failure),
